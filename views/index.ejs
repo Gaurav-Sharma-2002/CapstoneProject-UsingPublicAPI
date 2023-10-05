@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Public API</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="text-white bg-secondary-subtle">
+  <h1 class="text-success main-heading">Capstone Project - Using a Public API</h1>
+
+  <!-- get request -->
+  <div class="get circle">
+    <h3>GET</h3>
+    <button class="get-btn" type="submit" onclick="window.location.href='/listOfUsers'">Get List Of Users</button>
+  </div>
+
+  <!-- post request  -->
+  <div class="post circle">
+    <h3>POST</h3>
+    <!-- form for submitting user data -->
+    <form action="/post-user-details" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="job">Job:</label>
+      <input type="text" id="job" name="job" required>
+      <br>
+      <input class="get-btn post-btn" type="submit" value="Create User">
+    </form>
+  </div>
+
+  <!-- put request -->
+  <div class="put circle">
+    <h3>PUT</h3>
+    <!-- Add a form for put-updating user data -->
+    <form action="/put-update-user-details" method="post">
+      <label for="name">Name :</label>
+      <input type="text" id="put-name" name="name" required>
+      <br>
+      <label for="job">Job :</label>
+      <input type="text" id="put-job" name="job" required>
+      <br>
+      <input class="get-btn" type="submit" value="Put-Update User Data">
+    </form>
+  </div>
+
+  <!-- patch request  -->
+  <div class="patch circle">
+    <h3>PATCH</h3>
+    <!-- Add a form for patch-updating user data -->
+    <form action="/patch-update-user-details" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="patch-name" name="name">
+      <br>
+      <label for="job">Job:</label>
+      <input type="text" id="patch-job" name="job">
+      <br>
+      <input class="get-btn patch-btn" type="submit" value="Patch-Update User Data">
+    </form>
+  </div>
+
+  <!-- delete request  -->
+  <div class="delete circle">
+    <h3>DELETE</h3>
+    <form action="/delete-user-details" method="post">
+      <input class="get-btn" type="submit" value="Delete User Details">
+    </form>
+  </div>
+
+  <!-- response text  -->
+  <div>
+    <p>
+      <%=content%>
+    </p>
+  </div>
+
+</body>
+
+</html>

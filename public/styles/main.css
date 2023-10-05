@@ -1,0 +1,86 @@
+/* common-styling  */
+.circle {
+    display: inline-block;
+    padding: 50px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* specific styling  */
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+.main-heading {
+    margin: 20px auto;
+}
+
+/* get request  */
+  .get {
+    background-color: cornflowerblue;
+}
+
+.get-btn {
+    background-color: #36db32;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.get-btn:hover {
+    background-color: rgb(255, 193, 7);
+}
+
+/* post request  */
+.post {
+    background-color: orange;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+
+.post-btn:hover {
+    background-color: cornflowerblue;
+}
+
+/* put request  */
+.put {
+    background-color: lightblue;
+}
+
+#put-name,#put-job  {
+    background-color: lightblue;
+}
+
+/* patch request */
+.patch {
+    background-color: cyan;
+}
+
+#patch-name , #patch-job {
+    background-color: cyan;
+}
+
+.patch-btn:hover {
+    background-color: lightblue;
+}
+
+/* delete request  */
+.delete {
+    background-color: red;
+}
+
+/* response text  */
+p {
+    color: aqua;
+    background-color: black;
+    padding: 30px;
+    border-radius: 30px;
+}
